@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>nnewman1.github.io</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://nnewman1.github.io/css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://nnewman1.github.io/pics/pic6.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <ul class="w3-navbar" id="myNavbar">
+      <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+      </li>
+      <li class="w3-left-align"><a href="https://nnewman1.github.io/index.html">HOME</a></li>
+      <li class="w3-hide-small"><a href="https://nnewman1.github.io/index4.html"><i class="fa fa-user"></i> ABOUT</a></li>
+      <li class="w3-hide-small"><a href="https://nnewman1.github.io/index2.html"><i class="fa fa-th"></i> PORTFOLIO</a></li>
+      <li class="w3-hide-small"><a href="https://nnewman1.github.io/index3.html"><i class="fa fa-envelope"></i> CONTACT</a></li>
+      <li class="w3-hide-small w3-right">
+        <a href="#" class="w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+      <ul class="w3-navbar w3-left-align w3-white">
+        <li><a href="#about" onclick="toggleFunction()">ABOUT</a></li>
+        <li><a href="#portfolio" onclick="toggleFunction()">PORTFOLIO</a></li>
+        <li><a href="#contact" onclick="toggleFunction()">CONTACT</a></li>
+        <li><a href="#">SEARCH</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p class="w3-large w3-center">35 days left</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="https://nnewman1.github.io/index2.html" class="w3-btn w3-padding w3-light-grey w3-hover-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+      <i class="fa fa-instagram w3-hover-text-purple"></i>
+      <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+      <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+      <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+      <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+    </div>
+    <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+  <script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  var navbar = document.getElementById("myNavbar");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+  } else {
+    navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+  }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
